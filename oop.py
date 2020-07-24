@@ -47,6 +47,9 @@ def __repr__(self):
 as_1 = assistant('BASHIRU', 'BUKARI', 8000, 'reseacher')
 as_2 = assistant('BUKARI', 'ATULE', 2000, 'service personel')
 
+sentence = """
+ welcome to coding with muhammad"""
+
 sub_1 = supervisor('AMADU', 'BUKARI', 30000, [as_1])
 sub_1.remove_lec(as_1)
 sub_1.add_lec(as_1)
@@ -55,3 +58,4 @@ sub_1.print_lecs()
 sub_1.remove_lec(as_1)
 print(as_1.__repr__())
 print("this is bashiru")
+print(sentence)
